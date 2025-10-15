@@ -14,6 +14,6 @@ app.get('/',(req,res)=>{
     })
 })
 
-app.use('/register', registerUser)
+app.use('/', registerUser)
 
 module.exports = app
