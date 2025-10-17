@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const connectDB = () => {
-    mongoose.connect('mongodb://localhost:27017/zomato')
+    mongoose.connect(process.env.MONDODB_URL)
     .then(() => {
         console.log("MongoDB connected")
     })
