@@ -1,8 +1,9 @@
 const foodModel = require('../models/foodModel')
+const { uploadFile } = require('../services/storageService')
 
 module.exports.createFood = async (req, res) => {
     try {
-        console.log(req.foodPartner)
+        
         res.status(200).json({ message: 'Food created successfully' })        
     } catch (error) {
         
